@@ -144,8 +144,10 @@
 }
 
 .heading {
+  width: 843px;
+  max-width: none;
   margin-top: 60px;
-  padding-right: 574px;
+  padding-right: 0px;
   padding-left: 0px;
   font-family: Inconsolata, monospace;
   font-size: 55px;
@@ -269,6 +271,61 @@
   text-decoration: none;
 }
 
+.mobile-nav-overlay {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .heading {
+    width: 700px;
+  }
+
+  .typed-text {
+    font-size: 100px;
+  }
+
+  .heading-4 {
+    width: 740px;
+    font-size: 32px;
+  }
+
+  .github-link-2 {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .learn-more-link {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .heading {
+    width: 530px;
+    margin-bottom: 0px;
+    font-size: 45px;
+  }
+
+  .typed-text {
+    font-size: 75px;
+  }
+
+  .heading-4 {
+    width: 550px;
+    font-size: 22px;
+  }
+
+  .github-link-2 {
+    width: 80px;
+    font-size: 18px;
+  }
+
+  .learn-more-link {
+    font-size: 18px;
+  }
+}
+
 @media screen and (max-width: 479px) {
   .mobile-nav-button {
     display: -webkit-box;
@@ -332,6 +389,86 @@
     background-repeat: no-repeat;
     background-attachment: scroll;
     font-size: 32px;
+  }
+
+  .heading {
+    width: 280px;
+    margin-bottom: 9px;
+    font-size: 35px;
+  }
+
+  .typed-text {
+    margin-top: 10px;
+    margin-bottom: 29px;
+    font-size: 40px;
+  }
+
+  .heading-4 {
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 44px;
+  }
+
+  .github-link-2 {
+    width: 80px;
+    height: 25px;
+    font-size: 16px;
+  }
+
+  .learn-more-link {
+    font-size: 16px;
+  }
+
+  .mobile-nav-overlay {
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    z-index: 99;
+    display: block;
+    background-color: #fff;
+    opacity: 0.9;
+  }
+
+  .mnav-overlay-bottom {
+    height: 20px;
+    margin-top: 40px;
+    padding-bottom: 0px;
+  }
+
+  .mnav-overlay-top {
+    height: 20px;
+    padding-bottom: 0px;
+  }
+
+  .mnav-overlay-content {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .mnav-content-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .mav-content-item-link {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #000;
+    font-size: 24px;
+    text-decoration: none;
   }
 }
 

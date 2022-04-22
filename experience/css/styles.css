@@ -305,6 +305,87 @@
   align-items: center;
 }
 
+.mobile-nav-button-2 {
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.mobile-button-line-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  height: 1px;
+  margin-top: 0px;
+  padding-top: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.nav-link-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 44px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-link-2:hover {
+  opacity: 0.7;
+}
+
+.nav-link-2.contact {
+  display: none;
+}
+
+.mobile-nav-overlay {
+  display: none;
+}
+
 @media screen and (max-width: 479px) {
   .nav-link {
     display: none;
@@ -386,5 +467,105 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .mobile-nav-button-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    padding-top: 8px;
+    padding-right: 0px;
+    padding-bottom: 7px;
+  }
+
+  .mobile-button-line-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60%;
+    height: 1px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #000;
+  }
+
+  .nav-link-2 {
+    display: none;
+  }
+
+  .nav-link-2.contact {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 10px;
+    padding-left: 17px;
+    background-image: url('../images/2055904.png');
+    background-position: 50% 50%;
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    font-size: 32px;
+  }
+
+  .paragraph-2 {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .mobile-nav-overlay {
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    z-index: 99;
+    display: block;
+    margin-top: 51px;
+    background-color: #fff;
+    opacity: 0.9;
+  }
+
+  .mnav-overlay-content {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .mnav-content-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .mav-content-item-link {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #000;
+    font-size: 24px;
+    text-decoration: none;
   }
 }
